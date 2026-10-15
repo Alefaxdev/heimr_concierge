@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Azure-SDK-ene kjøres som vanlige Node-pakker på serveren
+  serverExternalPackages: ["@azure/identity", "@azure/keyvault-secrets", "@azure/msal-node"],
 };
 
 export default nextConfig;
